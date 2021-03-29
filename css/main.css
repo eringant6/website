@@ -1,0 +1,172 @@
+.darktheme {  
+   /* background-image:  url("img//background.png"); */
+    background-color: #272727; 
+    text-align:center;    
+  }
+
+.bodytext {
+    text-transform: uppercase;
+    text-align:center;
+    color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin: 50px 100px 100px 100px; }
+
+
+.headertext {
+    line-height: 2.0;
+    font-stretch: expanded;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white }
+
+        
+a:link, a:visited {
+    background-color: #8cb6dd;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    }
+    
+a:hover {
+    background-color: rgb(48, 65, 85);
+    justify-content: center;
+    }
+
+a:active {
+    background-color: rgb(48, 65, 85);
+    border-style:inset;
+    justify-content: center;
+}
+.list {
+    
+    text-transform: uppercase;
+    text-align:left;
+    color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style-position:inside
+}
+
+.outsidelist {
+    
+    text-align:left; 
+    display: inline-block; 
+    color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style-position:inside;
+    text-transform: uppercase;
+    text-size-adjust: auto;	   
+}
+
+/*image formatting */
+.centeredimg {
+    width: 100%;
+    height:auto;
+    display: block;
+    }   
+
+.imgwrap {
+    position:relative;
+    width:50%;
+    
+    display: block;
+    margin-left:auto;
+    margin-right: auto; 
+   
+}
+.imgdescription {
+    position: absolute;
+    color: rgb(8, 8, 8);
+    font-size: 30px;
+    top:50%;
+    left:50%;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    text-align:middle;
+  }
+
+  .overlay {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s; 
+    background: rgba(113, 133, 146, 0.72); 
+  }
+  
+  .imgwrap:hover .overlay {
+    opacity: 1;
+  }
+
+
+  /* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(255, 253, 253);
+    color: rgb(15, 15, 15);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 250, 250) transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
